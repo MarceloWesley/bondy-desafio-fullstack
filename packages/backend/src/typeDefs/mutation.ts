@@ -2,6 +2,6 @@ import gql from 'graphql-tag'
 
 export default gql`
   type Mutation {
-    signIn(email: String!, password: String!): User
+    signIn(email: String!, password: String!): signInResponse
   }
 `
