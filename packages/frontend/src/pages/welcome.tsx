@@ -9,7 +9,6 @@ function Welcome() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log("useffect");
     if (!loggedUser) {
       navigate("/sign-in");
     }
