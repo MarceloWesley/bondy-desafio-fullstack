@@ -1,8 +1,15 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
+import { UserProvider } from "./context/auth";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
-    <div>
-      <p className="text-cyan-400">Hello World</p>
-    </div>
+    <UserProvider>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </UserProvider>
   );
 }
 
